@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+</head>
+<body>
+    <h1><u>Traffic Light</u></h1>
+    <p id = "lightColor"></p>
+    
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+        p{
+            font-size: x-large;
+        }
+    </style>
+    <script>
+        var l= 0;
+        switch(l){
+            case 0 : 
+                text = "Red";
+                break;
+            case 1:
+                text = "Yellow";
+                break;
+            case 2:
+                text = "Green";
+                break;
+            default:
+                text = "Fail";
+        }
+        document.getElementById("lightColor").innerHTML = text;
+    </script>
+</body>
+</html>
